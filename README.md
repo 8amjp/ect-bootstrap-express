@@ -25,3 +25,9 @@ var ectRenderer = ECT({ watch: true, root: __dirname + '/views', ext : '.ect' })
 app.set('view engine', 'ect');
 app.engine('ect', ectRenderer.render);
 ```
+
+## ECT とは
+
+[Pug](https://pugjs.org/)(Jade) と [EJS](http://ejs.co/) の良いトコ取りをしつつ爆速と評判のテンプレートエンジンです。  
+EJSみたいに `<%= @title %>` てな感じで変数を埋め込んだりでき、  
+Pugみたいに`extend` やら `block` やら `include` が使えます。
